@@ -25,7 +25,7 @@ object Example_5 {
     var outputUrl = "jdbc:oracle:thin:@192.168.110.19:1522/XE"
     var outputUser = "DWKIM"
     var outputPw = "dwkim"
-
+    var a = 10
 
     // 데이터 저장
     var prop = new java.util.Properties
