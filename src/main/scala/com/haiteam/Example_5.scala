@@ -26,6 +26,7 @@ object Example_5 {
     var outputUser = "DWKIM"
     var outputPw = "dwkim"
 
+
     // 데이터 저장
     var prop = new java.util.Properties
     prop.setProperty("driver", "oracle.jdbc.OracleDriver")
