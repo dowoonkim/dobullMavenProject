@@ -26,8 +26,9 @@ object EX_0412 {
     selloutData2FromOracle.show()
 
     var middleResult = spark.sql("select " +
-    "concat(a.regionid,'_',a.product) as keycol, " +
-    "a.regionid, " +
+    //concat은 두 데이터 프레임을"_"로 이어서 합쳐주고 as를 통해 keycol로 테이터 테이블을 새로 만들어 준다.
+      "concat(a.regionid,'_',a.product) as keycol, " +
+      "a.regionid, " +
       "a.product, " +
       "a.yearweek, " +
       "cast(a.qty as double) as qty, " +
